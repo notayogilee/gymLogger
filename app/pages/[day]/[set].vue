@@ -1,8 +1,12 @@
 <template>
   <main class="h-full">
-    <div class="flex items-center justify-center gap-5 flex-col h-full">
+    <div class="flex items-center justify-center gap-5 flex-col h-screen">
       <ul class="text-center" v-if="exercises">
-        <li v-for="exercise in superSet" :key="exercise.id">
+        <li
+          v-for="exercise in superSet"
+          :key="exercise.id"
+          class="bg-white rounded my-2 py-2"
+        >
           <h3>{{ exercise.superset }} - {{ exercise.name }}</h3>
         </li>
       </ul>

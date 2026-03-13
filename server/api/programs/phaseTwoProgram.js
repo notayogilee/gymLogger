@@ -1,6 +1,6 @@
 export default defineEventHandler((event) => {
   return {
-    training: [
+    trainingData: [
       {
         day: 1,
         title: "Full Body & Core",
